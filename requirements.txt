@@ -1,0 +1,7 @@
+requests == 2.2.1
+argparse
+json
+pandas
+beautifulsoup4
+random
+numpy
