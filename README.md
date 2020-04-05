@@ -1,4 +1,6 @@
 # Instagram_scraper
+pip install requests==2.2.1
+pip install -r requirements.txt
 # python InstagramScraper.py
 
 # Version 
