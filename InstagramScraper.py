@@ -106,20 +106,23 @@ def main():
     results = parser.parse_args()
     print("#########################-----INSTAGRAM SCRAPER-----#########################")
     print("Scraping for ",results.username)
-    df = Instagram(results.username)
-    print('Details : \n')
-    for key,values in df.scrape_profile().items():
-        print(key," : ",values)
     try:
-       
-        for key,values in df.scrape_posts().items():
-            print("\n")
-            print("Post : ",key+1)
-            print("\n")
-            for key,values in values.items():
-                print(key," : ",values)        
+        df = Instagram(results.username)
+        print('Details : \n')
+        for key,values in df.scrape_profile().items():
+            print(key," : ",values)
+        try:
+           
+            for key,values in df.scrape_posts().items():
+                print("\n")
+                print("Post : ",key+1)
+                print("\n")
+                for key,values in values.items():
+                    print(key," : ",values)        
+        except:
+            pass
     except:
-        pass
+        print("Sorry details not found :Try with proper username(profilename)\n")
     print("Follow : https://github.com/dhanushnayak")
 if __name__=='__main__':
     main()
