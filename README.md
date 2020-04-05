@@ -36,7 +36,7 @@ joined_recently  :  False
 business_category_name  :  None
 is_private  :  False
 is_verified  :  False
-Follow : https://github.com/dhanushnayak
+Follow Us : https://github.com/dhanushnayak
 
 
 # Note : Search must me instagram profile name
